@@ -1,0 +1,23 @@
+# ??. Driver Configuration
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/menudb
+    username: ohgiraffers
+    password: ohgiraffers
+
+  ## ??. MyBatis Configuration
+  #mybatis:
+  #  mapper-locations: mapper/**/*.xml
+
+  # JPA Config
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    database: mysql
+    properties:
+      hibernate:
+        format_sql: true
+
+  mvc:
+    static-path-pattern: /static/**
